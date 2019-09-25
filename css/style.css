@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: sans-serif;
+    background: rgb(216,234,243);
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+
+.topics {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
