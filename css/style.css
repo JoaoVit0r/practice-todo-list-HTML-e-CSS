@@ -6,7 +6,7 @@
 html, body{
     height: 100%;
     font-family: sans-serif;
-    background: rgb(230, 240, 245);
+    background: rgb(240, 240, 240);
 }
 
 header{
@@ -24,55 +24,68 @@ header h1{
 
 header .add{
     display: flex;
+    align-content: center;
 }
 
 header input{
     border: none;
     font-size: 14px;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 9px;
+    margin-top: 14px;
+    margin-right: 5px;
     width: 350px;
+    height: 18px;
+    border: 1px solid #c3c3c3;    
 }
 header button {
     border: none;
-    background-color: rgb(230, 240, 245);
-    font-size: 42px;
+    background-color: rgb(240, 240, 240);
+    font-size: 41px;
+    margin-top: 9.5px;
+    margin-left: 5px;
+    align-self: flex-start;
 }
 
-
 .topics ul{
-    margin: 10px;
+    margin: 10px 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /*Quebra caso seja necessario*/    
-    justify-content: space-evenly;
+    justify-content: space-around;
 }  
 
 .topics ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     margin: 10px;
     padding: 5px;
     list-style-type: none;
-    box-shadow: 0 0 5px 2px #999;
+    box-shadow: 0 0 5px 2px #c4c4c4;
+}
+
+.topics ul li h2{
+    margin: 15px;
 }
 
 .topics ul li .sub-topic{
     display: flex;
-    margin: 0px 2px;
+    font-size: 18px;
+    margin: 5px 2px;
     flex-direction: column; 
 }   
 
 .topics ul li .sub-topic li{
     display: flex;
-    width: 250px;
-    background-color: aqua;
+    width: 300px;
+    background-color: rgba(169, 203, 216, 0.45);
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
     box-shadow: none;
+    padding: 10px 0px;
+    margin: 5px 18px;
 }
 
 .topics ul li .sub-topic li i {
