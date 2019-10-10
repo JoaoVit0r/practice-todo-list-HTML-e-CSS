@@ -20,6 +20,7 @@ header{
 
 header h1{
     font-size: 45px;
+    text-transform: uppercase;
 }
 
 header .add{
@@ -27,7 +28,7 @@ header .add{
     align-content: center;
 }
 
-header input{
+header .description{
     border: none;
     font-size: 14px;
     padding: 9px;
@@ -35,9 +36,9 @@ header input{
     margin-right: 5px;
     width: 350px;
     height: 18px;
-    border: 1px solid #c3c3c3;    
+    border: 1px solid #c3c3c3;
 }
-header button {
+header #buttonAdd {
     border: none;
     background-color: rgb(240, 240, 240);
     font-size: 41px;
@@ -67,19 +68,20 @@ header button {
 
 .topics ul li h2{
     margin: 15px;
+    text-transform: uppercase;
 }
 
-.topics ul li .sub-topic{
+.topics ul li .itens{
     display: flex;
     font-size: 18px;
     margin: 5px 2px;
     flex-direction: column; 
 }   
 
-.topics ul li .sub-topic li{
+.topics ul li .itens li{
     display: flex;
     width: 300px;
-    background-color: rgba(169, 203, 216, 0.45);
+    background-color: rgba(169, 203, 216);
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
@@ -88,7 +90,11 @@ header button {
     margin: 5px 18px;
 }
 
-.topics ul li .sub-topic li i {
+.topics ul li .itens li button {
+    border: none;
+    background-color: rgba(169, 203, 216);
+    font-size: 18px;
+    margin-top: 1px;
     margin-left: 5px;
 }
 

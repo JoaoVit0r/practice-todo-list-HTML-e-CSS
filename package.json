@@ -1,0 +1,27 @@
+{
+  "name": "practice-todo-list-html-e-css",
+  "version": "1.0.0",
+  "description": "Exercício passado no Curso de HTML e CSS da UNECT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoVit0r/practice-todo-list-HTML-e-CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoVit0r/practice-todo-list-HTML-e-CSS/issues"
+  },
+  "homepage": "https://github.com/JoaoVit0r/practice-todo-list-HTML-e-CSS#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1"
+  }
+  "eslintConfig": {
+  "globals": {
+    "window": true
+  }
+}
+}
