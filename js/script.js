@@ -66,8 +66,7 @@ const moverItem = (li, lista) => {
             while(lista.childNodes[i] != li && i>=0){
                 i--;
             }
-            
-            lista.childNodes[i].childNodes[1].onclick = () => moverItem (li, listaDone);
+             lista.childNodes[i].querySelector('button').onclick = () => moverItem (li, listaDone);
         }
         else{
             lista.appendChild(li)
@@ -78,7 +77,7 @@ const moverItem = (li, lista) => {
                 i--;
             }
 
-            lista.childNodes[i].childNodes[1].onclick = () => {
+            lista.childNodes[i].querySelector('button').onclick = () => {
                 lista.removeChild(li);
                 //save()
             };
