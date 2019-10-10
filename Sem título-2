@@ -1,0 +1,22 @@
+<ul id="to-do" class="itens">
+                        <li><p>Revisar HTML e CSS</p> <button class="fas fa-chevron-circle-right"></button></li>
+                        <li><p>Fazer o Todo App</p> <button class="fas fa-chevron-circle-right"></button></li>
+                        <li><p>Postar meu código no GitHub</p> <button class="fas fa-chevron-circle-right"></button></li>
+                        <li><p>Ir na aula de JS</p> <button class="fas fa-chevron-circle-right"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Doing</h2>
+                    <ul id="doing" class="itens">
+                        <li><p>Ir na aula de HTML e CSS</p> <button class="fas fa-chevron-circle-right"></button>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Done</h2>
+                    <ul id="done" class="itens">
+                        <li><p>Ir na reunião de projetos</p> <button class="fas fa-times-circle"></button>
+                        </li>
+                        <li><p>Ir na aula de Git</p> <button class="fas fa-times-circle"></button>
+                        </li>
+                    </ul>

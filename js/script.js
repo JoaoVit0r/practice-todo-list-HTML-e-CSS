@@ -34,7 +34,7 @@ const criarItem = (descricao, toDo) => {
 
     //li.appendChild(buttonImg)
 
-    //button.onclick = () => moverItem (li, listaDoing)
+    button.onclick = () => moverItem (li, listaDoing)
 
     
 
@@ -48,27 +48,44 @@ const criarItem = (descricao, toDo) => {
 }
 
 const moverItem = (li, lista) => {
-    
-}
-
-/*const excluirDone = (item, done) => {
-
-    let animation = item.animate([{
+    let animation = li.animate([{
         opacity: '1',
         transform: 'scale(1)'
     }, {
         opacity: '0',
         transform: 'scale(0.8)'
     }], 200)
-
+            
     animation.onfinish = () => {
+        
+        if (lista == listaDoing ){
+            lista.appendChild(li)
+            
+            let i =(lista.childElementCount - 1);
+            
+            while(lista.childNodes[i] != li && i>=0){
+                i--;
+            }
+            
+            lista.childNodes[i].childNodes[1].onclick = () => moverItem (li, listaDone);
+        }
+        else{
+            lista.appendChild(li)
+            
+            let i =(lista.childElementCount - 1);
+            
+            while(lista.childNodes[i] != li && i>=0){
+                i--;
+            }
 
-        done.removeChild(item)
-        //save()
+            lista.childNodes[i].childNodes[1].onclick = () => {
+                lista.removeChild(li);
+                //save()
+            };
+        }
     }
-}*/
+}
 
-
-console.log(listaDone);
+//console.log(listaDone);
 
 buttonAdd.onclick = () => criarItem(inputDescription.value, listaToDo)
