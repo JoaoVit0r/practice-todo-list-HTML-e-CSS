@@ -1,3 +1,4 @@
+
 const bottonAdd = document.querySelector("#buttonAdd");
 const inputDescription = document.querySelector(".description");
 const listaToDo = document.querySelector("#to-do");
@@ -76,11 +77,14 @@ const moverItem = (li, lista) => {
             while(lista.childNodes[i] != li && i>=0){
                 i--;
             }
-
-            lista.childNodes[i].querySelector('button').onclick = () => {
+            
+            let button =            lista.childNodes[i].querySelector('button');
+            
+            button.onclick = () => {
                 lista.removeChild(li);
-                //save()
             };
+            
+            button.classList.replace("fa-chevron-circle-right","fa-times-circle");
         }
     }
 }
